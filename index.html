@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,11 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/html" href="./styles/glide.core.min.css" /> -->
+    <!-- <link rel="stylesheet" href="./styles/glide.theme.min.css" /> -->
   </head>
   <body>
     <!-- Header content block -->
@@ -66,6 +77,38 @@
     </header>
     <!-- Main content block -->
     <main class="main">
+      <div class="container-slider">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">              <img
+                src="./images/markguerrero.jpg"
+        alt="Mark Guerrero"
+                width="264"
+              />
+</li>
+              <li class="glide__slide"> <img
+                src="./images/camilagarcia.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              /></li>
+              <li class="glide__slide"> <img
+                src="./images/tomford.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              /></li>
+            </ul>
+          </div>
+       <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+      </div>
+        </div>
+      </div>
+
+      <div id="productList"></div>
+
       <!-- Hero page -->
       <section class="hero-section">
         <div class="container hero-container">
@@ -75,6 +118,7 @@
           </button>
         </div>
       </section>
+
       <!-- Features -->
       <section class="advantages-section">
         <div class="container advantages-container">
@@ -616,13 +660,27 @@
         </ul>
       </div>
     </div>
+    <a href="#" id="roll_back" class="animate">
+      <svg class="arrow-up">
+        <use href="./images/icons.svg#icon-arrow_up_icon"></use></svg
+    ></a>
+
     <script src="./js/modal.js"></script>
-    <script
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/scroll-up.js"></script>
+    <script type="module" src="./js/getdata.js"></script>
+    <script type="module" src="./js/slider.js "></script>
+
+    <!-- <script type="module" src="./js/index.js"></script> -->
+
+    <!-- <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
-    ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    
   </body>
 </html>

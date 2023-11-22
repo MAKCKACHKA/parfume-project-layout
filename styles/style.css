@@ -11,6 +11,10 @@
   --hero-backgroundd-color: rgba(46, 47, 66, 0.7);
   --transition-250: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --white-color: rgb(255, 255, 255);
+  --primary-animation-duration: 200ms;
+  --color-modal-background: rgb(179, 175, 167);
+  --color-accent-primary: rgb(152, 143, 143);
+  --color-gray-pale-alpha050: rgba(5, 5, 5, 0.579);
 }
 
 /* BODY */
@@ -37,6 +41,10 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
+*,
+html {
+  scroll-behavior: smooth;
+}
 ul,
 ol {
   margin-top: 0;
@@ -50,9 +58,92 @@ a {
   list-style: none;
   text-decoration: none;
   font-style: normal;
+  transition: 0.5s;
+  outline: none !important;
 }
 header {
   border-bottom: 1px solid var(--accent-color);
+}
+
+.animate {
+  -webkit-animation: animatezoom var(--primary-animation-duration) forwards;
+  animation: animatezoom var(--primary-animation-duration) forwards;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate-reverse {
+  -webkit-animation: animatezoom-reverse var(--primary-animation-duration)
+    forwards;
+  animation: animatezoom-reverse var(--primary-animation-duration) forwards;
+}
+
+@-webkit-keyframes animatezoom-reverse {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+  }
+}
+
+@keyframes animatezoom-reverse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+/*ADDITIONAL*/
+#roll_back {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--color-modal-background);
+  /* background-color: #161616; */
+  border-radius: 100%;
+  border: 3px solid var(--color-accent-primary);
+  padding: 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 3; */
+  color: var(--color-accent-primary);
+  font-weight: 700;
+  font-size: 28px;
+  opacity: 0.8;
+}
+
+#roll_back:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+
+.arrow-up {
+  width: 24px;
+  height: 24px;
+  color: var(--color-gray-pale-alpha050);
+  fill: var(--color-gray-pale-alpha050);
+  stroke: currentColor;
+  color: var(--color-accent-primary);
 }
 
 .visually-hidden {
@@ -1138,8 +1229,10 @@ header {
 
 .team-member {
   background: var(--white-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   display: flex;
   flex-direction: column;
@@ -1271,7 +1364,9 @@ header {
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
 
-  transition: fill var(--transition-250), border-color var(--transition-250);
+  transition:
+    fill var(--transition-250),
+    border-color var(--transition-250);
 }
 .customer-link:hover .customer-icon,
 .customer-link:focus .customer-icon {
@@ -1352,15 +1447,20 @@ header {
   border-radius: 4px;
   padding: 12px 24px;
 
-  transition: color var(--transition-250),
-    background-color var(--transition-250), box-shadow var(--transition-250),
-    border-radius var(--transition-250), border var(--transition-250);
+  transition:
+    color var(--transition-250),
+    background-color var(--transition-250),
+    box-shadow var(--transition-250),
+    border-radius var(--transition-250),
+    border var(--transition-250);
 }
 .filter-button:hover,
 .filter-button:focus {
   color: var(--white-color);
   background-color: var(--pressed-state-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+  box-shadow:
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: 1px solid var(--pressed-state-color);
@@ -1379,8 +1479,10 @@ header {
 
 .portfolio-list-item:hover,
 .portfolio-list-item:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-text {
   padding: 32px 16px 32px 16px;
@@ -1551,7 +1653,9 @@ header {
   width: 100%;
   height: 100%;
   background: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--transition-250), visibility var(--transition-250),
+  transition:
+    opacity var(--transition-250),
+    visibility var(--transition-250),
     scale var(--transition-250);
 }
 .backdrop.is-hidden {
@@ -1565,7 +1669,9 @@ header {
   position: absolute;
 
   background-color: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
@@ -1583,7 +1689,8 @@ header {
   border-radius: 50%;
   padding: 0;
 
-  transition: background-color var(--transition-250),
+  transition:
+    background-color var(--transition-250),
     border-color var(--transition-250);
 }
 .mobal-close-btn-icon {
@@ -1749,7 +1856,9 @@ header {
   height: 16px;
   border: 1.25px solid var(--dark-color);
   border-radius: 2px;
-  transition: background var(--transition-250), border var(--transition-250);
+  transition:
+    background var(--transition-250),
+    border var(--transition-250);
 }
 .checkbox-icon {
   width: 100%;

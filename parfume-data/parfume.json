@@ -1,0 +1,74 @@
+[
+  {
+    "code": "SNL100011",
+    "name": "FRANCK BOCLET VANILLE EDP",
+    "image": "https://www.brocard.ua/media/catalog/product/142771ce79/eyJ3Ijo1MDAsImgiOjUwMCwibyI6ImNhdGFsb2dcL3Byb2R1Y3RcL1wvM1wvNVwvMzU3NTA3MDA0NDYwN18xLmpwZyJ9/franck-boclet-cashmere.webp",
+    "description": "vial 1.7 ml без бирки",
+    "category": "VIAL",
+    "gender": "U",
+    "weight": 1.05
+  },
+  {
+    "code": "SMO210017",
+    "name": "MONT BLANC EXPLORER EDP",
+    "image":"https://www.brocard.ua/media/catalog/product/150638a774/eyJ3Ijo1MDAsImgiOjUwMCwibyI6ImNhdGFsb2dcL3Byb2R1Y3RcL1wvM1wvM1wvMzM4NjQ2MDEwMTAzNV8xLmpwZyJ9/montblanc-explorer.webp",
+    "description": "minispray 2 ml",
+    "category": "VIAL",
+    "gender": "M",
+    "weight": 1.0
+  },
+  {
+    "code": "SMO260008",
+    "name": "MONT BLANC EXPLORER PLATINUM EDP",
+    "image":"https://www.brocard.ua/media/catalog/product/2376758787/eyJ3Ijo1MDAsImgiOjUwMCwibyI6ImNhdGFsb2dcL3Byb2R1Y3RcL1wvM1wvM1wvMzM4NjQ2MDEzNTgyNV8xLmpwZyJ9/montblanc-explorer-platinum.webp",
+    "description": "minispray 2 ml",
+    "category": "VIAL",
+    "gender": "M",
+    "weight": 1.0
+  },
+  {
+    "code": "SMO230007",
+    "name": "MONT BLANC EXPLORER ULTRA BLUE EDP",
+    "image":"https://www.brocard.ua/media/catalog/product/222397a51d/eyJ3Ijo1MDAsImgiOjUwMCwibyI6ImNhdGFsb2dcL3Byb2R1Y3RcL1wvM1wvM1wvMzM4NjQ2MDEyMTUyMV8xLmpwZyJ9/montblanc-explorer-ultra-blue.webp",
+    "description": "minispray 2 ml",
+    "category": "VIAL",
+    "gender": "M",
+    "weight": 1.0
+  },
+  {
+    "code": "SMO080021",
+    "name": "MONT BLANC LEGEND EDP",
+    "image":"https://www.brocard.ua/media/catalog/product/150858678e/eyJ3Ijo1MDAsImgiOjUwMCwibyI6ImNhdGFsb2dcL3Byb2R1Y3RcL1wvM1wvM1wvMzM4NjQ2MDAzMjY5OF8xLmpwZyJ9/montblanc-legend.webp",
+    "description": "minispray 1.2 ml",
+    "category": "VIAL",
+    "gender": "M",
+    "weight": 1.0
+  },
+  {
+    "code": "SMO220006",
+    "name": "MONT BLANC SIGNATURE EDP",
+    "image":"https://www.brocard.ua/media/catalog/product/215082636a/eyJ3Ijo1MDAsImgiOjUwMCwibyI6ImNhdGFsb2dcL3Byb2R1Y3RcL1wvM1wvM1wvMzM4NjQ2MDExMzU4OF8xLmpwZyJ9/montblanc-signature.webp",
+    "description": "minispray 2 ml",
+    "category": "VIAL",
+    "gender": "W",
+    "weight": 1.0
+  },
+  {
+    "code": "SMO250004",
+    "name": "MONT BLANC SIGNATURE ABSOLUE EDP",
+    "image":"https://i.parfums.ua/b/bp/bpn7fdpiyi2y.jpg",
+    "description": "minispray 2 ml",
+    "category": "VIAL",
+    "gender": "W",
+    "weight": 1.0
+  },
+  {
+    "code": "STR030028",
+    "name": "TRUSSARDI DONNA EDP",
+    "image":"https://www.brocard.ua/media/catalog/product/1385225a18/eyJ3Ijo1MDAsImgiOjUwMCwibyI6ImNhdGFsb2dcL3Byb2R1Y3RcL1wvOFwvMFwvODAxMTUzMDgyMDAwOF8yLmpwZyJ9/trussardi-donna.webp",
+    "description": "minispray 1.2 ml",
+    "category": "VIAL",
+    "gender": "W",
+    "weight": 1.1
+  }
+]
