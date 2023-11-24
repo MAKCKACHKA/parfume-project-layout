@@ -42,7 +42,7 @@ function renderProd(item) {
         </li>
   `;
 }
-fetch(jsonFilePath)
+fetch('../parfume-data/parfume.json')
   .then(response => {
     if (!response.ok) {
       throw new Error(
@@ -51,8 +51,7 @@ fetch(jsonFilePath)
     }
     return response.json();
   })
- .then(data => {
-  
+  .then(data => {
     const sorted = data.sort((a, b) => {
       const nameA = a.name.toUpperCase();
       const nameB = b.name.toUpperCase();
@@ -71,16 +70,15 @@ fetch(jsonFilePath)
   .then(data => {
     const productListDiv = document.getElementById('productList');
     data.forEach(product => {
-
       const productInfo = renderProd(product);
       // productListDiv.appendChild(productInfo);
-      productListDiv.innerHTML += productInfo
+      productListDiv.innerHTML += productInfo;
     });
   })
   .catch(error => {
     console.error('Error fetching data:', error);
   });
-  
+
 // function renderPopularItems(data) {
 //   productList.innerHTML = '';
 //   for (let i = 0; i < maxIterations; i++) {
