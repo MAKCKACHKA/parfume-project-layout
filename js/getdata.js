@@ -42,7 +42,7 @@ function renderProd(item) {
         </li>
   `;
 }
-fetch('../parfume.json')
+fetch('https://makckachka.github.io/parfume-project-layout/parfume.json')
   .then(response => {
     if (!response.ok) {
       throw new Error(
